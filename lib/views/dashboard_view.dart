@@ -1,9 +1,9 @@
 import 'package:final_responsive_app/helper/adaptive_layout.dart';
-import 'package:final_responsive_app/layouts/desktop.dart';
+import 'package:final_responsive_app/layouts/desktop_layout.dart';
 import 'package:flutter/material.dart';
 
-class DashboardView extends StatelessWidget {
-  const DashboardView({super.key});
+class DashBoardView extends StatelessWidget {
+  const DashBoardView({super.key});
 
   @override
   Widget build(BuildContext context) {
