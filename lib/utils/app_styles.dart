@@ -58,7 +58,7 @@ abstract class AppStyles {
   );
 
   static const TextStyle styleBold16 = TextStyle(
-    color: Color(0xff064060),
+    color: Color(0xff4EB7F2),
     fontFamily: 'Montserrat',
     fontSize: 16,
     fontWeight: FontWeight.w700,

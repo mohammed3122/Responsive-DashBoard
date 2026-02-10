@@ -1,5 +1,5 @@
 import 'package:final_responsive_app/models/card_user_info_model.dart';
-import 'package:final_responsive_app/utils/app_style.dart';
+import 'package:final_responsive_app/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -15,8 +15,7 @@ class CardUserInfo extends StatelessWidget {
         color: Color(0xfffafafa),
         borderRadius: BorderRadius.circular(12),
       ),
-      width: 232,
-      height: 63,
+
       child: ListTile(
         leading: SvgPicture.asset(data.image, width: 32, height: 32),
         title: Text(data.title, style: AppStyles.styleSemiBold16),
