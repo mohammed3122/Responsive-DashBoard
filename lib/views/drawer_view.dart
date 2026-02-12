@@ -11,45 +11,43 @@ class DrawerView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Container(
-        color: Colors.white,
-        child: CustomScrollView(
-          slivers: [
-            SliverToBoxAdapter(
-              child: CardUserInfo(
-                data: CardUserInfoModel(
-                  image: Assets.imagesAvatar3,
-                  title: 'Lekan Okeowo',
-                  subTitle: 'demo@gmail.com',
+    return Container(
+      color: Colors.white,
+      child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: CardUserInfo(
+              data: CardUserInfoModel(
+                image: Assets.imagesAvatar3,
+                title: 'Lekan Okeowo',
+                subTitle: 'demo@gmail.com',
+              ),
+            ),
+          ),
+          SliverToBoxAdapter(child: SizedBox(height: 8)),
+          ListCategorisItem(),
+          SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                Expanded(child: SizedBox()),
+                UnActiveCategory(
+                  category: CatogrisItemModel(
+                    image: Assets.imagesSetting,
+                    title: 'Setting system',
+                  ),
                 ),
-              ),
-            ),
-            SliverToBoxAdapter(child: SizedBox(height: 8)),
-            ListCategorisItem(),
-            SliverFillRemaining(
-              hasScrollBody: false,
-              child: Column(
-                children: [
-                  Expanded(child: SizedBox()),
-                  UnActiveCategory(
-                    category: CatogrisItemModel(
-                      image: Assets.imagesSetting,
-                      title: 'Setting system',
-                    ),
+                UnActiveCategory(
+                  category: CatogrisItemModel(
+                    image: Assets.imagesLogout,
+                    title: 'Logout account',
                   ),
-                  UnActiveCategory(
-                    category: CatogrisItemModel(
-                      image: Assets.imagesLogout,
-                      title: 'Logout account',
-                    ),
-                  ),
-                  SizedBox(height: 48),
-                ],
-              ),
+                ),
+                SizedBox(height: 48),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

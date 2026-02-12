@@ -1,73 +1,93 @@
 import 'package:flutter/material.dart';
 
 abstract class AppStyles {
-  static const TextStyle styleRegular16 = TextStyle(
-    color: Color(0xff064060),
-    fontFamily: 'Montserrat',
-    fontSize: 16,
-    fontWeight: FontWeight.w400,
-  );
+  static TextStyle styleRegular16([Color? color]) {
+    return TextStyle(
+      color: color ?? Color(0xff064060),
+      fontFamily: 'Montserrat',
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+    );
+  }
 
-  static const TextStyle styleMedium16 = TextStyle(
-    color: Color(0xff064060),
-    fontFamily: 'Montserrat',
-    fontSize: 16,
-    fontWeight: FontWeight.w500,
-  );
+  static TextStyle styleMedium16({Color? color}) {
+    return TextStyle(
+      color: color ?? const Color(0xff064060),
+      fontFamily: 'Montserrat',
+      fontSize: 16,
+      fontWeight: FontWeight.w500,
+    );
+  }
 
-  static const TextStyle styleSemiBold16 = TextStyle(
-    color: Color(0xff064061),
-    fontFamily: 'Montserrat',
-    fontSize: 16,
-    fontWeight: FontWeight.w600,
-  );
+  static TextStyle styleSemiBold16({Color? color}) {
+    return TextStyle(
+      color: color ?? const Color(0xff064061),
+      fontFamily: 'Montserrat',
+      fontSize: 16,
+      fontWeight: FontWeight.w600,
+    );
+  }
 
-  static const TextStyle styleSemiBold20 = TextStyle(
-    color: Color(0xff064060),
-    fontFamily: 'Montserrat',
-    fontSize: 20,
-    fontWeight: FontWeight.w600,
-  );
+  static TextStyle styleSemiBold20({Color? color}) {
+    return TextStyle(
+      color: color ?? const Color(0xff064060),
+      fontFamily: 'Montserrat',
+      fontSize: 20,
+      fontWeight: FontWeight.w600,
+    );
+  }
 
-  static const TextStyle styleRegular12 = TextStyle(
-    color: Color(0xffAAAAAA),
-    fontFamily: 'Montserrat',
-    fontSize: 12,
-    fontWeight: FontWeight.w400,
-  );
+  static TextStyle styleRegular12({Color? color}) {
+    return TextStyle(
+      color: color ?? const Color(0xffAAAAAA),
+      fontFamily: 'Montserrat',
+      fontSize: 12,
+      fontWeight: FontWeight.w400,
+    );
+  }
 
-  static const TextStyle styleSemiBold24 = TextStyle(
-    color: Color(0xff4EB7F2),
-    fontFamily: 'Montserrat',
-    fontSize: 24,
-    fontWeight: FontWeight.w600,
-  );
+  static TextStyle styleSemiBold24({Color? color}) {
+    return TextStyle(
+      color: color ?? const Color(0xff4EB7F2),
+      fontFamily: 'Montserrat',
+      fontSize: 24,
+      fontWeight: FontWeight.w600,
+    );
+  }
 
-  static const TextStyle styleRegular14 = TextStyle(
-    color: Color(0xffAAAAAA),
-    fontFamily: 'Montserrat',
-    fontSize: 14,
-    fontWeight: FontWeight.w400,
-  );
+  static TextStyle styleRegular14({Color? color}) {
+    return TextStyle(
+      color: color ?? const Color(0xffAAAAAA),
+      fontFamily: 'Montserrat',
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+    );
+  }
 
-  static const TextStyle styleSemiBold18 = TextStyle(
-    color: Color(0xffFFFFFF),
-    fontFamily: 'Montserrat',
-    fontSize: 18,
-    fontWeight: FontWeight.w600,
-  );
+  static TextStyle styleSemiBold18({Color? color}) {
+    return TextStyle(
+      color: color ?? const Color(0xffFFFFFF),
+      fontFamily: 'Montserrat',
+      fontSize: 18,
+      fontWeight: FontWeight.w600,
+    );
+  }
 
-  static const TextStyle styleBold16 = TextStyle(
-    color: Color(0xff4EB7F2),
-    fontFamily: 'Montserrat',
-    fontSize: 16,
-    fontWeight: FontWeight.w700,
-  );
+  static TextStyle styleBold16({Color? color}) {
+    return TextStyle(
+      color: color ?? const Color(0xff4EB7F2),
+      fontFamily: 'Montserrat',
+      fontSize: 16,
+      fontWeight: FontWeight.w700,
+    );
+  }
 
-  static const TextStyle styleMedium20 = TextStyle(
-    color: Color(0xffffffff),
-    fontFamily: 'Montserrat',
-    fontSize: 20,
-    fontWeight: FontWeight.w500,
-  );
+  static TextStyle styleMedium20({Color? color}) {
+    return TextStyle(
+      color: color ?? const Color(0xffffffff),
+      fontFamily: 'Montserrat',
+      fontSize: 20,
+      fontWeight: FontWeight.w500,
+    );
+  }
 }

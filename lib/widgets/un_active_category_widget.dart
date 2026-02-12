@@ -12,7 +12,7 @@ class UnActiveCategory extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(category.image),
-      title: Text(style: AppStyles.styleRegular16, category.title),
+      title: Text(style: AppStyles.styleRegular16(), category.title),
     );
   }
 }

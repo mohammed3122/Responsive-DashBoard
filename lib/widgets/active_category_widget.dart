@@ -12,7 +12,7 @@ class ActiveCategory extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(category.image),
-      title: Text(style: AppStyles.styleBold16, category.title),
+      title: Text(style: AppStyles.styleBold16(), category.title),
       trailing: Container(width: 3.27, color: Color(0xff4EB7F2)),
     );
   }

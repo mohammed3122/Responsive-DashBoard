@@ -18,8 +18,8 @@ class CardUserInfo extends StatelessWidget {
 
       child: ListTile(
         leading: SvgPicture.asset(data.image, width: 32, height: 32),
-        title: Text(data.title, style: AppStyles.styleSemiBold16),
-        subtitle: Text(data.subTitle, style: AppStyles.styleRegular12),
+        title: Text(data.title, style: AppStyles.styleSemiBold16()),
+        subtitle: Text(data.subTitle, style: AppStyles.styleRegular12()),
       ),
     );
   }
